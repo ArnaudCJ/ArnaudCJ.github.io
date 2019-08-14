@@ -1,0 +1,74 @@
+
+/* Tous les éléments sont en Times New Roman */
+*
+{
+    font-family: "times New Roman", arial, sans-serif;
+}
+
+
+/* Technos utilisées dans l'encart supérieur droit */
+.techno_droit
+{
+  width: 350px;
+  font-style: normal;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-align: center;
+  border-style: dashed;
+  padding: 10px;
+
+
+}
+
+
+/* Coordonnées dans l'encart supérieur gauche */
+.coordonnees_gauche
+{
+  font-size: 1.1em;
+  font-variant: small-caps;
+  text-align: left;
+}
+
+.photo_cv
+{
+  display: block;
+  float: left;
+  width:150px;
+
+}
+
+
+.stop_floatting
+{
+
+  clear: both;
+}
+
+
+
+/* TAILLE DU TEXTE
+ 3 façons d'indiquer la taille d'un texte avec : font-size :"***"
+1 - En taille absolue : px/cm/mm
+2 - En taille relative : xx-small ; x-small ; small ; medium ; large: grand ; x-large: très grand ; xx-large
+3 - En taille relative également en indiquant un coefficient de taille : 1em ; 0.8em ; 1.3em ; etc.
+*/
+
+h1
+{
+  font-size: 1.3em;
+  font-family: "times New Roman", arial, serif;
+  letter-spacing: 1px;
+}
+
+
+/* Les titres de grandes parties du CV sont en h2 */
+h2
+{
+  font-size: 1.6em;
+  font-family: "times New Roman", arial, serif;
+  text-decoration: underline;
+}
+
+
+/* Nom de la formation ou ou de l'expérience pro est en gras */
+h3
