@@ -12,7 +12,7 @@ myHeading.textContent = 'Bienvenue sur mon profil GitHub' + storedName;
 /* Déclenchement de la demande du prénom si le test retourne 'false' + stockage dans le navigateur */
 function setUserName() {
   let myName = prompt('Bonjour ! Quel est votre prénom ?')
-  localStorage.SetItem('name', myName);
+  localStorage.setItem('name', myName);
   myHeading.textContent = 'Bienvenue sur mon profil GitHub' + myName;
 }
 
