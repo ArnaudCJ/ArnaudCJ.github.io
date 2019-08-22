@@ -1,10 +1,47 @@
 
-/* Tous les éléments sont en Times New Roman */
-*
+/* Style commun pour toutes les pages ---------------------------------------*/
+
 {
     font-family: "Open Sans","Times New Roman", arial, sans-serif;
 }
 
+
+header
+{
+  background-color: blue;
+  font-family: Verdana;
+}
+
+nav
+{
+  background-color: lightgrey;
+  display: flex;
+}
+
+h1
+{
+  font-size: 1.3em;
+  font-family: "times New Roman", arial, serif;
+  letter-spacing: 1px;
+}
+
+
+/* Les titres de grandes parties du CV sont en h2 */
+h2
+{
+  font-size: 1.6em;
+  font-family: "times New Roman", arial, serif;
+  text-decoration: underline;
+}
+
+
+/* Nom de la formation ou ou de l'expérience pro est en gras */
+h3
+{
+
+}
+
+/* CV FR --------------------------------------------------------------------------------*/
 
 /* Technos utilisées dans l'encart supérieur droit */
 .techno_droit
@@ -52,23 +89,3 @@
 2 - En taille relative : xx-small ; x-small ; small ; medium ; large: grand ; x-large: très grand ; xx-large
 3 - En taille relative également en indiquant un coefficient de taille : 1em ; 0.8em ; 1.3em ; etc.
 */
-
-h1
-{
-  font-size: 1.3em;
-  font-family: "times New Roman", arial, serif;
-  letter-spacing: 1px;
-}
-
-
-/* Les titres de grandes parties du CV sont en h2 */
-h2
-{
-  font-size: 1.6em;
-  font-family: "times New Roman", arial, serif;
-  text-decoration: underline;
-}
-
-
-/* Nom de la formation ou ou de l'expérience pro est en gras */
-h3
