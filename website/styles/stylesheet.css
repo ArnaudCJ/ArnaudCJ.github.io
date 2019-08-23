@@ -14,6 +14,7 @@
    grid-template-rows: max-content max-content max-content;
    grid-gap: 10px;
    background-image: url(images/place-bourse-bordeaux.jpg);
+   background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
 }
