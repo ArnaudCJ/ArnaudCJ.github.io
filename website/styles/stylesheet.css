@@ -5,21 +5,52 @@
     font-family: "Open Sans","Times New Roman", arial, sans-serif;
 }
 
+/* Wrapper pour la disposition générale des pages */
+
+.wrapperbody {
+  display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 100px 100px 100px 100px;
+   grid-gap: 10px;
+}
 
 header
 {
-  background-color: blue;
+  background-color: white;
   font-family: Verdana;
+  grid-column: 2 / 4;
+  justify-content: center;
 }
 
-nav
-{
+nav {
   background-color: lightgrey;
-  display: flex;
+  border: 2px solid;
+  grid-row: 1 / 5 ;   
 }
 
-h1
-{
+.menu {  
+  display: flex; 
+  flex-direction: column;
+}
+
+.menu > li {
+  flex: 1;
+  justify-content: space-between;  
+}
+
+main {
+  grid-column: 2 / 4;
+}
+
+button {
+  
+}
+
+footer{
+  grid-column: -3 / -1;
+}
+
+h1 {
   font-size: 1.3em;
   font-family: "times New Roman", arial, serif;
   letter-spacing: 1px;
