@@ -18,24 +18,25 @@ header
 {
   background-color: white;
   font-family: Verdana;
-  grid-column: 2 / 4;
+  grid-column: 1 / 4;
   justify-content: center;
+  content: counter;
 }
 
 nav {
   background-color: lightgrey;
   border: 2px solid;
-  grid-row: 1 / 5 ;   
+  grid-row: 2 / 5;
 }
 
-.menu {  
-  display: flex; 
+.menu {
+  display: flex;
   flex-direction: column;
 }
 
 .menu > li {
   flex: 1;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 main {
@@ -43,7 +44,7 @@ main {
 }
 
 button {
-  
+
 }
 
 footer{
