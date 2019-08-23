@@ -1,37 +1,43 @@
 
 /* Style commun pour toutes les pages ---------------------------------------*/
 
-{
-    font-family: "Open Sans","Times New Roman", arial, sans-serif;
+*{
+    font-family: Helvetica, arial, sans-serif;
 }
 
 /* Wrapper pour la disposition générale des pages */
 
 .wrapperbody {
   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 100px 100px 100px 100px 100px;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: max-content max-content max-content ;
    grid-gap: 10px;
 }
 
-header
-{
-  background-color: white;
-  font-family: Verdana;
-  grid-column: 2 / 4;
-  justify-content: center;
-  font-size: 30px;
-  line-height: 39px;
+header {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 5;
+  border: 1px solid;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
 }
+
+button{
+  width: 100px;
+  margin: auto;
+}
+
+/* Style du menu de navigation */
 
 nav {
   background-color: lightgrey;
   border: 2px solid;
   grid-row: 2 / 4;
-  font-size: 30px;
-  line-height: 93px;
-  letter-spacing: -0.013em;
-  font-weight: 400;
+  position: sticky;
+  margin: auto;
+  margin-left: 0;
 }
 
 .menu {
@@ -42,11 +48,17 @@ nav {
 .menu > li {
   flex: 1;
   justify-content: space-between;
+  width: max-content;
+  margin: 10px;
 }
 
 main {
+display: flex;
   grid-column: 2 / 4;
-  font-size: 30px;
+  font-size: 20px;
+  flex-direction: column;
+  text-align: justify;
+  margin: auto;
 }
 
 button {
@@ -54,13 +66,15 @@ button {
 }
 
 footer{
-  grid-column: -4 / -1;
-  grid-row: 6/7;
+  grid-column: -5 / -1;
+  grid-row: 4/5;
+  text-align: center;
+  font-size: 1.125em;
+  font-style: italic;
 }
 
 h1 {
-  font-size: 1.3em;
-  font-family: "times New Roman", arial, serif;
+  font-size: 2.5em;
   letter-spacing: 1px;
 }
 
@@ -69,7 +83,6 @@ h1 {
 h2
 {
   font-size: 1.6em;
-  font-family: "times New Roman", arial, serif;
   text-decoration: underline;
 }
 
