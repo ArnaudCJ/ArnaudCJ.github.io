@@ -18,6 +18,8 @@
    background-size: cover;
 }
 
+/*Style du header*/
+
 header {
   display: flex;
   flex-direction: column;
@@ -42,9 +44,9 @@ nav {
   background-color: rgba(247, 251, 252, 0.84);
   border: 2px solid;
   grid-row: 2 / 4;
-  position: sticky;
+  position: fixed;
   margin: auto;
-  margin-top: 22%;
+  margin-top: 12%;
   margin-left: 0;
   border-color: #dfd7c4;
 }
@@ -59,13 +61,15 @@ nav {
   justify-content: space-between;
   width: max-content;
   margin: 10px;
-  font-size: 1.2em;
+  font-size: 1.25rem;
 }
 
+/* Style de la partie centrale de chaque page*/
+
 main {
-display: flex;
+  display: flex;
   grid-column: 2 / 4;
-  font-size: 20px;
+  font-size: 1.25rem;
   flex-direction: column;
   text-align: justify;
   margin: auto;
@@ -76,16 +80,30 @@ display: flex;
   border-color: #dfd7c4;
 }
 
+aside {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  margin: auto;
+  padding: 5%;
+  background-color: rgba(247, 251, 252, 0.90);
+  border: 2px solid;
+  border-color: #dfd7c4;
+  text-align: left;
+  font-size: 1.25rem;
+}
+
 button {
 background-color: rgba(247, 251, 252, 0.84);
 }
+
+/* Style du footer */
 
 footer{
   grid-column: -5 / -1;
   grid-row: 4/5;
   margin-top: 3%;
   text-align: center;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   font-style: italic;
   background-color: rgba(247, 251, 252, 0.60);
 }
@@ -99,7 +117,7 @@ h1 {
 /* Les titres de grandes parties du CV sont en h2 */
 h2
 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 
@@ -110,20 +128,6 @@ h3
 }
 
 /* CV FR --------------------------------------------------------------------------------*/
-
-/* Technos utilisées dans l'encart supérieur droit */
-.techno_droit
-{
-  width: 350px;
-  font-style: normal;
-  font-weight: bold;
-  font-variant: small-caps;
-  text-align: center;
-  border-style: dashed;
-  padding: 10px;
-
-
-}
 
 
 /* Coordonnées dans l'encart supérieur gauche */
