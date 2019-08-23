@@ -80,6 +80,8 @@ main {
   border-color: #dfd7c4;
 }
 
+/* STYLE DE LA PARTIE TECHNO A DROITE DANS INDEX */
+
 aside {
   grid-column: 4 / 5;
   grid-row: 2 / 3;
@@ -91,6 +93,15 @@ aside {
   text-align: left;
   font-size: 1.25rem;
 }
+
+aside > li {
+  flex: 1;
+  justify-content: space-between;
+  width: max-content;
+  margin: 10px;
+  font-size: 1.25rem;
+}
+
 
 button {
 background-color: rgba(247, 251, 252, 0.84);
@@ -115,11 +126,13 @@ h1 {
 
 
 /* Les titres de grandes parties du CV sont en h2 */
-h2
-{
+h2 {
   font-size: 1.5rem;
 }
 
+.h2-center {
+  text-align: center;
+}
 
 /* Nom de la formation ou ou de l'expérience pro est en gras */
 h3
@@ -131,33 +144,14 @@ h3
 
 
 /* Coordonnées dans l'encart supérieur gauche */
-.coordonnees_gauche
-{
-  font-size: 1.1em;
-  font-variant: small-caps;
-  text-align: left;
-}
 
-.photo_cv
-{
+.photo_cv {
   display: block;
   float: left;
   width:150px;
-
 }
 
 
-.stop_floatting
-{
-
+.stop_floatting {
   clear: both;
 }
-
-
-
-/* TAILLE DU TEXTE
- 3 façons d'indiquer la taille d'un texte avec : font-size :"***"
-1 - En taille absolue : px/cm/mm
-2 - En taille relative : xx-small ; x-small ; small ; medium ; large: grand ; x-large: très grand ; xx-large
-3 - En taille relative également en indiquant un coefficient de taille : 1em ; 0.8em ; 1.3em ; etc.
-*/
