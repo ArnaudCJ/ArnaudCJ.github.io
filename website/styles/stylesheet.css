@@ -3,6 +3,7 @@
 
 *{
     font-family: Helvetica, arial, sans-serif;
+    color : #243442;
 }
 
 /* Wrapper pour la disposition générale des pages */
@@ -10,9 +11,11 @@
 .wrapperbody {
   display: grid;
    grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: max-content max-content max-content ;
+   grid-template-rows: max-content max-content max-content;
    grid-gap: 10px;
-   background-image: url(https://arnaudcj.github.io/images/place-bourse-bordeaux.jpg) ;
+   background-image: url(images/place-bourse-bordeaux.jpg);
+   background-position: center;
+   background-size: cover;
 }
 
 header {
@@ -20,9 +23,12 @@ header {
   flex-direction: column;
   grid-column: 1 / 5;
   border: 1px solid;
+  border-color: #dfd7c4;
   text-align: center;
   padding: 20px;
   margin: auto;
+  background-color: rgba(247, 251, 252, 0.84);
+
 }
 
 button{
@@ -33,12 +39,14 @@ button{
 /* Style du menu de navigation */
 
 nav {
-  background-color: lightgrey;
+  background-color: rgba(247, 251, 252, 0.84);
   border: 2px solid;
   grid-row: 2 / 4;
   position: sticky;
   margin: auto;
+  margin-top: 22%;
   margin-left: 0;
+  border-color: #dfd7c4;
 }
 
 .menu {
@@ -51,6 +59,7 @@ nav {
   justify-content: space-between;
   width: max-content;
   margin: 10px;
+  font-size: 1.2em;
 }
 
 main {
@@ -60,18 +69,25 @@ display: flex;
   flex-direction: column;
   text-align: justify;
   margin: auto;
+  margin-top: 8%;
+  padding: 10px;
+  background-color: rgba(247, 251, 252, 0.90);
+  border: 2px solid;
+  border-color: #dfd7c4;
 }
 
 button {
-
+background-color: rgba(247, 251, 252, 0.84);
 }
 
 footer{
   grid-column: -5 / -1;
   grid-row: 4/5;
+  margin-top: 3%;
   text-align: center;
   font-size: 1.125em;
   font-style: italic;
+  background-color: rgba(247, 251, 252, 0.60);
 }
 
 h1 {
@@ -83,8 +99,7 @@ h1 {
 /* Les titres de grandes parties du CV sont en h2 */
 h2
 {
-  font-size: 1.6em;
-  text-decoration: underline;
+  font-size: 1.5em;
 }
 
 
