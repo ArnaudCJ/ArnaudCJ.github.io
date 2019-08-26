@@ -6,31 +6,11 @@
     color : #243442;
 }
 
-
-/* Responsive layout */
-
-@media (min-width: 300px); {
-
-  .wrapperbody {
-    display: flex;
-  }
-
-  nav {
-    position: relative;
-    background: blue;
-  }
-}
-
-  h1 {
-    font-size: calc(1.5rem + 3vw);
-  }
-}
-
 /* Wrapper pour la disposition générale des pages */
 
 .wrapperbody {
   display: grid;
-   grid-template-columns: repeat(4, 1fr);
+   grid-template-columns: 1fr 2fr 1fr;
    grid-template-rows: max-content max-content max-content;
    grid-gap: 10px;
    background-image: url(images/place-bourse-bordeaux.jpg);
@@ -39,20 +19,22 @@
    background-size: cover;
 }
 
+
 /*Style du header*/
 
 header {
   display: flex;
   flex-direction: column;
-  grid-column: 1 / 5;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
   border: 1px solid;
   border-color: #dfd7c4;
   text-align: center;
   padding: 20px;
   margin: auto;
   background-color: rgba(247, 251, 252, 0.84);
-
 }
+
 
 button{
   width: 100px;
@@ -64,8 +46,9 @@ button{
 nav {
   background-color: rgba(247, 251, 252, 0.84);
   border: 2px solid;
-  grid-row: 2 / 4;
-  position: fixed;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3 ;
+  position: relative;
   margin: auto;
   margin-top: 12%;
   margin-left: 0;
@@ -75,12 +58,12 @@ nav {
 .menu {
   display: flex;
   flex-direction: column;
+  width: auto;
+  list-style-type: none outside ;
 }
 
 .menu > li {
-  flex: 1;
   justify-content: space-between;
-  width: max-content;
   margin: 10px;
   font-size: 1.25rem;
 }
@@ -89,7 +72,8 @@ nav {
 
 main {
   display: flex;
-  grid-column: 2 / 4;
+  grid-column: 2 / 3 ;
+  grid-row: 2 / 3;
   font-size: 1.25rem;
   flex-direction: column;
   text-align: justify;
@@ -104,9 +88,9 @@ main {
 /* STYLE DE LA PARTIE TECHNO A DROITE DANS INDEX */
 
 aside {
-  grid-column: 4 / 5;
+  grid-column: 3 / 4;
   grid-row: 2 / 3;
-  margin: auto;
+  margin-right: 0
   padding: 5%;
   background-color: rgba(247, 251, 252, 0.90);
   border: 2px solid;
@@ -131,8 +115,8 @@ background-color: rgba(247, 251, 252, 0.84);
 /* Style du footer */
 
 footer{
-  grid-column: -5 / -1;
-  grid-row: 4/5;
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
   margin-top: 3%;
   text-align: center;
   font-size: 1.125rem;
@@ -203,4 +187,127 @@ position: relative;
   text-decoration: none;
   margin-right: 15px;
 
+}
+
+
+/* RESPONSIVE LAYOUT */
+
+@media screen and (max-width: 1280px) {
+
+    h1{
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.125rem;
+      text-align: center;
+    }
+
+    .wrapperbody {
+      display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: max-content max-content;
+       grid-gap: 20px;
+    }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 /2;
+        grid-row: 1 / 2;
+        border: 1px solid;
+        border-color: #dfd7c4;
+        text-align: center;
+        padding: 20px;
+        margin: auto;
+        background-color: rgba(247, 251, 252, 0.84);
+      }
+
+
+      button {
+        width: 100px;
+        margin: auto;
+      }
+
+      /* Style du menu de navigation */
+
+      nav {
+        background-color: rgba(247, 251, 252, 0.84);
+        border: 2px solid;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3 ;
+        position: relative;
+        margin: auto;
+        border-color: #dfd7c4;
+        text-align: left;
+        text-indent: -30px;
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+      }
+
+      .menu > li {
+        justify-content: space-between;
+        margin: 10px;
+        font-size: 0.9rem;
+        list-style: none;
+      }
+
+      /* Style de la partie centrale de chaque page*/
+
+      main {
+        display: flex;
+        grid-column: 1 / 2 ;
+        grid-row: 3 / 4;
+        font-size: 0.8rem;
+        flex-direction: column;
+        text-align: left;
+        margin: auto;
+        padding: 10px;
+        background-color: rgba(247, 251, 252, 0.90);
+        border: 2px solid;
+        border-color: #dfd7c4;
+      }
+
+      /* STYLE DE LA PARTIE TECHNO A DROITE DANS INDEX */
+
+      aside {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        column-count: 2;
+        column-width: 100px;
+        width: 80%;
+        padding: 5%;
+        background-color: rgba(247, 251, 252, 0.90);
+        border: 2px solid;
+        border-color: #dfd7c4;
+        margin: auto;
+        text-align: center;
+        font-size: 0.8rem;
+      }
+
+      aside > li {
+        width: content;
+        margin: 10px;
+      }
+
+
+      button {
+      background-color: rgba(247, 251, 252, 0.84);
+      }
+
+      /* Style du footer */
+
+      footer{
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+        margin-top: 3%;
+        text-align: center;
+        font-size: 0.70rem;
+        font-style: italic;
+        background-color: rgba(247, 251, 252, 0.60);
+      }
 }
