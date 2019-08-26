@@ -6,6 +6,26 @@
     color : #243442;
 }
 
+
+/* Responsive layout */
+
+@media (min-width: 300px); {
+
+  .wrapperbody {
+    display: flex;
+  }
+
+  nav {
+    position: relative;
+    background: blue;
+  }
+}
+
+  h1 {
+    font-size: calc(1.5rem + 3vw);
+  }
+}
+
 /* Wrapper pour la disposition générale des pages */
 
 .wrapperbody {
