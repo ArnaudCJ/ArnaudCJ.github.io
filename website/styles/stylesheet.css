@@ -12,8 +12,8 @@
   display: grid;
    grid-template-columns: 1fr 2fr 1fr;
    grid-template-rows: max-content max-content max-content;
-   grid-gap: 10px;
-   background-image: url(images/place-bourse-bordeaux.jpg);
+   grid-gap: 75px;
+   background-image: url(images/place-bourse-bordeaux-compress-2000w.jpg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -49,17 +49,16 @@ nav {
   grid-column: 1 / 2;
   grid-row: 2 / 3 ;
   position: relative;
-  margin: auto;
-  margin-top: 12%;
-  margin-left: 0;
   border-color: #dfd7c4;
+  margin: auto;
+  margin-top: inherit;
+  margin-bottom: inherit;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  width: auto;
-  list-style-type: none outside ;
+  list-style-type: square;
 }
 
 .menu > li {
@@ -78,7 +77,6 @@ main {
   flex-direction: column;
   text-align: justify;
   margin: auto;
-  margin-top: 8%;
   padding: 10px;
   background-color: rgba(247, 251, 252, 0.90);
   border: 2px solid;
@@ -90,7 +88,7 @@ main {
 aside {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
-  margin-right: 0
+  margin: auto;
   padding: 5%;
   background-color: rgba(247, 251, 252, 0.90);
   border: 2px solid;
@@ -117,7 +115,6 @@ background-color: rgba(247, 251, 252, 0.84);
 footer{
   grid-column: 1 / 4;
   grid-row: 3 / 4;
-  margin-top: 3%;
   text-align: center;
   font-size: 1.125rem;
   font-style: italic;
