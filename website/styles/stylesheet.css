@@ -13,10 +13,11 @@
    grid-template-columns: 1fr 2fr 1fr;
    grid-template-rows: max-content max-content max-content;
    grid-gap: 75px;
-   background-image: url(images/place-bourse-bordeaux-compress-2000w.jpg);
+   background-image: url(images/place-bourse-bordeaux.jpg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   background-attachment: fixed;
 }
 
 
@@ -52,7 +53,7 @@ nav {
   border-color: #dfd7c4;
   margin: auto;
   margin-top: inherit;
-  margin-bottom: inherit;
+  margin-bottom: auto;
 }
 
 .menu {
