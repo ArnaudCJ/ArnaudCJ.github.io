@@ -56,6 +56,11 @@ nav {
   margin-bottom: auto;
 }
 
+.fleche-haut-page{
+  margin: auto;
+  text-align: center;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
