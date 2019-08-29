@@ -100,7 +100,7 @@ aside {
   border: 2px solid;
   border-color: #dfd7c4;
   text-align: left;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 aside > li {
@@ -140,8 +140,7 @@ h2 {
   border-radius: 30px;
   text-align: center;
   border-color: #243442;
-  padding-bottom: 1%;
-  padding-top: 1%;
+  padding: 1%;
 }
 
 
