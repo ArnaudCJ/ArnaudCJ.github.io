@@ -79,7 +79,7 @@ main {
   display: flex;
   grid-column: 2 / 3 ;
   grid-row: 2 / 3;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   flex-direction: column;
   text-align: justify;
   margin: auto;
@@ -136,15 +136,18 @@ h1 {
 /* Les titres de grandes parties du CV sont en h2 */
 h2 {
   font-size: 1.5rem;
+  border-style: double;
+  border-radius: 30px;
+  text-align: center;
+  border-color: #243442;
+  padding-bottom: 1%;
+  padding-top: 1%;
 }
 
-.h2-center {
-  text-align: center;
-}
 
 /* Nom de la formation ou ou de l'expérience pro est en gras */
-h3
-{font-weight: bold;
+h3 {
+  font-weight: bold;
   font-size: 1.25rem;
 }
 
@@ -166,6 +169,27 @@ h3
   clear: both;
 }
 
+table {
+  table-layout : fixed;
+  width: 100%;
+  text-align: left;
+  border-spacing: 10px 5px;
+
+}
+
+th {
+  text-align: center;
+  border: solid 1px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.column{
+  column-count: 2;
+}
+
+tr, td {
+  border: 1px double black;
+}
 
 .logo-linkedin{
 width: 21px;
