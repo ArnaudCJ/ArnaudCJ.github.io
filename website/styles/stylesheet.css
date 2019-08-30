@@ -45,7 +45,7 @@ button{
 /* Style du menu de navigation */
 
 nav {
-  background-color: rgba(247, 251, 252, 0.84);
+  background-color: rgba(247, 251, 252, 0.95);
   border: 2px solid;
   grid-column: 1 / 2;
   grid-row: 2 / 3 ;
@@ -73,6 +73,10 @@ nav {
   font-size: 1.25rem;
 }
 
+ul > li {
+  margin: 10px;
+}
+
 /* Style de la partie centrale de chaque page*/
 
 main {
@@ -84,7 +88,7 @@ main {
   text-align: justify;
   margin: auto;
   padding: 10px;
-  background-color: rgba(247, 251, 252, 0.90);
+  background-color: rgba(247, 251, 252, 0.95);
   border: 2px solid;
   border-color: #dfd7c4;
 }
@@ -96,7 +100,7 @@ aside {
   grid-row: 2 / 3;
   margin: auto;
   padding: 5%;
-  background-color: rgba(247, 251, 252, 0.90);
+  background-color: rgba(247, 251, 252, 0.95);
   border: 2px solid;
   border-color: #dfd7c4;
   text-align: left;
@@ -118,7 +122,7 @@ background-color: rgba(247, 251, 252, 0.84);
 
 /* Style du footer */
 
-footer{
+footer {
   grid-column: 1 / 4;
   grid-row: 3 / 4;
   text-align: center;
@@ -173,7 +177,6 @@ table {
   width: 100%;
   text-align: left;
   border-spacing: 10px 5px;
-
 }
 
 th {
@@ -190,13 +193,13 @@ tr, td {
   border: 1px double black;
 }
 
-.logo-linkedin{
+.logo-linkedin {
 width: 21px;
 position: relative;
 }
 
 
-.logo-twitter{
+.logo-twitter {
   width: 30px;
   top: 10px;
   left: 3px;
@@ -204,7 +207,7 @@ position: relative;
 }
 
 
-.logo-git{
+.logo-git {
   width: 21px;
   position: relative;
 }
@@ -212,7 +215,6 @@ position: relative;
 .link-to-social-network {
   text-decoration: none;
   margin-right: 15px;
-
 }
 
 
