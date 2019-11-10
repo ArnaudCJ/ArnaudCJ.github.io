@@ -33,7 +33,7 @@ header {
   text-align: center;
   padding: 20px;
   margin: auto;
-  background-color: rgba(247, 251, 252, 0.84);
+  background-color: rgba(61, 61, 62, 0.53);
 }
 
 
@@ -45,7 +45,7 @@ button{
 /* Style du menu de navigation */
 
 nav {
-  background-color: rgba(247, 251, 252, 0.95);
+  background-color: rgba(61, 61, 62, 0.53);
   border: 2px solid;
   grid-column: 1 / 2;
   grid-row: 2 / 3 ;
@@ -88,7 +88,7 @@ main {
   text-align: justify;
   margin: auto;
   padding: 10px;
-  background-color: rgba(247, 251, 252, 0.95);
+  background-color: rgba(61, 61, 62, 0.53);
   border: 2px solid;
   border-color: #dfd7c4;
 }
@@ -100,7 +100,7 @@ aside {
   grid-row: 2 / 3;
   margin: auto;
   padding: 5%;
-  background-color: rgba(247, 251, 252, 0.95);
+  background-color: rgba(61, 61, 62, 0.53));
   border: 2px solid;
   border-color: #dfd7c4;
   text-align: left;
@@ -128,7 +128,7 @@ footer {
   text-align: center;
   font-size: 1.125rem;
   font-style: italic;
-  background-color: rgba(247, 251, 252, 0.60);
+  background-color: rgba(61, 61, 62, 0.53);
 }
 
 h1 {
