@@ -37,7 +37,7 @@ header {
 }
 
 
-button{
+button {
   width: 100px;
   margin: auto;
 }
@@ -185,7 +185,7 @@ th {
   border-radius: 20px 20px 0px 0px;
 }
 
-.column{
+.column {
   column-count: 2;
 }
 
@@ -329,7 +329,7 @@ position: relative;
 
       /* Style du footer */
 
-      footer{
+      footer {
         grid-column: 1 / 2;
         grid-row: 5 / 6;
         margin-top: 3%;
