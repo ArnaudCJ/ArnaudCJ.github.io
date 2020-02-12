@@ -220,6 +220,7 @@ position: relative;
 
 /* RESPONSIVE LAYOUT */
 
+
 @media screen and (max-width: 1280px) {
 
     h1{
@@ -248,7 +249,7 @@ position: relative;
         text-align: center;
         padding: 20px;
         margin: auto;
-        background-color: rgba(247, 251, 252, 0.84);
+        background-color: rgba(61, 61, 62, 0.53);
       }
 
 
@@ -260,7 +261,7 @@ position: relative;
       /* Style du menu de navigation */
 
       nav {
-        background-color: rgba(247, 251, 252, 0.84);
+        background-color: rgba(61, 61, 62, 0.53);
         border: 2px solid;
         grid-column: 1 / 2;
         grid-row: 2 / 3 ;
@@ -295,7 +296,7 @@ position: relative;
         text-align: left;
         margin: auto;
         padding: 10px;
-        background-color: rgba(247, 251, 252, 0.90);
+        background-color: rgba(61, 61, 62, 0.53);
         border: 2px solid;
         border-color: #dfd7c4;
       }
@@ -309,7 +310,7 @@ position: relative;
         column-width: 100px;
         width: 80%;
         padding: 5%;
-        background-color: rgba(247, 251, 252, 0.90);
+        background-color: rgba(61, 61, 62, 0.53);
         border: 2px solid;
         border-color: #dfd7c4;
         margin: auto;
@@ -324,7 +325,7 @@ position: relative;
 
 
       button {
-      background-color: rgba(247, 251, 252, 0.84);
+      background-color: rgba(61, 61, 62, 0.53);
       }
 
       /* Style du footer */
@@ -336,6 +337,4 @@ position: relative;
         text-align: center;
         font-size: 0.70rem;
         font-style: italic;
-        background-color: rgba(247, 251, 252, 0.60);
-      }
-}
+        background-color: rgba(61, 61, 62, 0.53);
