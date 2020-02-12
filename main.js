@@ -11,7 +11,7 @@ myHeading.textContent = storedName + ', bonjour et bienvenue !';
 
 /* Déclenchement de la demande du prénom si le test retourne 'false' + stockage dans le navigateur */
 function setUserName() {
-  let myName = prompt('Bonjour ! Quel est votre prénom ?')
+  let myName = prompt('Bonjour ! Quel est votre prénom ?');
   localStorage.setItem('name', myName);
   myHeading.textContent = myName + ', bonjour et bienvenue !';
 }
@@ -19,4 +19,4 @@ function setUserName() {
 /* Mise en place de l'event ".onclick" sur la variable myButton attachée au bouton dans le html pour déclencher la fonction "setUserName"  */
 myButton.onclick = function () {
     setUserName();
-}
+};
