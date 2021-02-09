@@ -1,0 +1,28 @@
+{
+  "responses": [
+    {
+      "type": "typing",
+      "value": true
+    },
+    {
+      "type": "text",
+      "markdown": true,
+      "text": "May I know your name please?"
+    }
+  ],
+  "nlu": {
+    "language": "en",
+    "entities": [],
+    "intent": {
+      "name": "hello",
+      "confidence": 1
+    },
+    "intents": [
+      {
+        "name": "hello",
+        "confidence": 1
+      }
+    ]
+  },
+  "state": {}
+}
